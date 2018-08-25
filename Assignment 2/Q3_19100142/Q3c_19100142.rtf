@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red72\green203\blue5;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c32549\c81569\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Q3c_19100142\
+Description:\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+Following are the detailed steps.\
+
+\b 1)\'a0
+\b0 Create a Min Heap of size V where V is the number of vertices in the given graph. Every node of min heap contains vertex number and distance value of the vertex.\
+
+\b 2)
+\b0 \'a0Initialize Min Heap with source vertex as root (the distance value assigned to source vertex is 0). The distance value assigned to all other vertices is INF (infinite).\
+
+\b 3)\'a0
+\b0 While Min Heap is not empty, do following\
+\'85..
+\b a)
+\b0 \'a0Extract the vertex with minimum distance value node from Min Heap. Let the extracted vertex be u.\
+\'85..
+\b b)
+\b0 \'a0For every adjacent vertex v of u, check if v is in Min Heap. If v is in Min Heap and distance value is more than weight of u-v plus distance value of u, then update the distance value of v.\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Time complexity:\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+O(ELogV)
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+The Space of this algorithm :\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf2 \cb4 \expnd0\expndtw0\kerning0
+O(n)
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0  \
+}
